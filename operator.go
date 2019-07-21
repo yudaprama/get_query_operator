@@ -1,6 +1,9 @@
 package get_query_operator
 
-import "strings"
+import (
+	"errors"
+	"strings"
+)
 
 func GetQueryOperator(op string) (string, error) {
 	op = strings.Replace(op, "$", "", -1)
